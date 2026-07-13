@@ -6,3 +6,12 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Falcon2.0 generated files
+.falcon2/
+.falcon2-security.json
+.falcon2-status
+.claude_settings.json
+.worktrees/
+.security-key
+logs/security/
