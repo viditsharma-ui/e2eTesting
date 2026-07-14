@@ -3,6 +3,7 @@ import ProtectedRoute from './components/ProtectedRoute.tsx'
 import LoginPage from './pages/LoginPage.tsx'
 import EmployeeDashboard from './pages/EmployeeDashboard.tsx'
 import ApplyLeavePage from './pages/ApplyLeavePage.tsx'
+import LeaveHistoryPage from './pages/LeaveHistoryPage.tsx'
 
 export default function App() {
   return (
@@ -21,7 +22,7 @@ export default function App() {
         />
         <Route
           path="/employee/history"
-          element={<ProtectedRoute requiredRole="employee"><div>Leave History</div></ProtectedRoute>}
+          element={<ProtectedRoute requiredRole="employee"><LeaveHistoryPage /></ProtectedRoute>}
         />
 
         {/* Manager routes */}
