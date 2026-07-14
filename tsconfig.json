@@ -40,5 +40,6 @@
     // "noUncheckedSideEffectImports": true,
     // "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+  },
+  "exclude": ["leave-api/**/*", "leave-app/**/*", "node_modules"]
 }
