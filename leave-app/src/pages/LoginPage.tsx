@@ -6,19 +6,23 @@ export default function LoginPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
+  const [emailError, setEmailError] = useState('')
+  const [passwordError, setPasswordError] = useState('')
   const navigate = useNavigate()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
+    setEmailError('')
+    setPasswordError('')
 
     if (!email) {
-      setError('Email is required')
+      setEmailError('Email is required')
       return
     }
 
     if (!password) {
-      setError('Password is required')
+      setPasswordError('Password is required')
       return
     }
 
@@ -38,7 +42,7 @@ export default function LoginPage() {
         navigate('/manager/dashboard')
       }
     } catch (err) {
-      setError('Invalid email or password')
+      setError('Incorrect email or password')
     }
   }
 
@@ -55,6 +59,11 @@ export default function LoginPage() {
             onChange={(e) => setEmail(e.target.value)}
             style={{ display: 'block', width: '100%', marginTop: '5px' }}
           />
+          {emailError && (
+            <div id="emailError" style={{ color: 'red', marginTop: '5px', fontSize: '14px' }}>
+              {emailError}
+            </div>
+          )}
         </div>
 
         <div style={{ marginBottom: '15px' }}>
@@ -66,6 +75,11 @@ export default function LoginPage() {
             onChange={(e) => setPassword(e.target.value)}
             style={{ display: 'block', width: '100%', marginTop: '5px' }}
           />
+          {passwordError && (
+            <div id="passwordError" style={{ color: 'red', marginTop: '5px', fontSize: '14px' }}>
+              {passwordError}
+            </div>
+          )}
         </div>
 
         {error && (
