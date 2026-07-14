@@ -1,6 +1,7 @@
 import express, { Express, Request, Response } from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
+import authRoutes from './routes/auth'
 
 // Load environment variables
 dotenv.config()
@@ -28,8 +29,8 @@ app.get('/', (req: Request, res: Response) => {
   res.status(200).json({ message: 'Leave Management API is running' })
 })
 
-// Routes will be added here
-// TODO: Add auth routes
+// Routes
+app.use('/auth', authRoutes)
 // TODO: Add leave routes
 
 // Start server
