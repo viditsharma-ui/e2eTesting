@@ -4,6 +4,7 @@ import LoginPage from './pages/LoginPage.tsx'
 import EmployeeDashboard from './pages/EmployeeDashboard.tsx'
 import ApplyLeavePage from './pages/ApplyLeavePage.tsx'
 import LeaveHistoryPage from './pages/LeaveHistoryPage.tsx'
+import ManagerDashboard from './pages/ManagerDashboard.tsx'
 
 export default function App() {
   return (
@@ -28,7 +29,7 @@ export default function App() {
         {/* Manager routes */}
         <Route
           path="/manager/dashboard"
-          element={<ProtectedRoute requiredRole="manager"><div>Manager Dashboard</div></ProtectedRoute>}
+          element={<ProtectedRoute requiredRole="manager"><ManagerDashboard /></ProtectedRoute>}
         />
 
         {/* Default redirect */}
