@@ -1,0 +1,34 @@
+{
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
+  },
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Read(./**)",
+      "Write(./**)",
+      "Edit(./**)",
+      "Glob(./**)",
+      "Grep(./**)",
+      "Read(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/worktrees/tasks/003-task/**)",
+      "Write(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/worktrees/tasks/003-task/**)",
+      "Edit(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/worktrees/tasks/003-task/**)",
+      "Glob(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/worktrees/tasks/003-task/**)",
+      "Grep(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/worktrees/tasks/003-task/**)",
+      "Read(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/worktrees/tasks/003-task/.falcon2/specs/003-task/**)",
+      "Write(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/worktrees/tasks/003-task/.falcon2/specs/003-task/**)",
+      "Edit(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/worktrees/tasks/003-task/.falcon2/specs/003-task/**)",
+      "Read(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/**)",
+      "Write(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/**)",
+      "Edit(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/**)",
+      "Glob(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/**)",
+      "Grep(/workspace/8c58f0e2-af44-4eee-a8e4-98632342357b/ab85468b-4c84-438a-ad6a-6f2c7384fc03/e2eTesting/.falcon2/**)",
+      "Bash(*)",
+      "WebFetch(*)",
+      "WebSearch(*)",
+      "mcp__context7__resolve-library-id(*)",
+      "mcp__context7__get-library-docs(*)"
+    ]
+  }
+}

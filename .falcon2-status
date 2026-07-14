@@ -1,0 +1,25 @@
+{
+  "active": true,
+  "spec": "003-task",
+  "state": "building",
+  "subtasks": {
+    "completed": 7,
+    "total": 24,
+    "in_progress": 1,
+    "failed": 0
+  },
+  "phase": {
+    "current": "Frontend SPA (leave-app)",
+    "id": null,
+    "total": 6
+  },
+  "workers": {
+    "active": 0,
+    "max": 1
+  },
+  "session": {
+    "number": 8,
+    "started_at": "2026-07-14T07:47:57.673408"
+  },
+  "last_update": "2026-07-14T08:15:10.014282"
+}

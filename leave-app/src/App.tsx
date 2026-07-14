@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import ProtectedRoute from './components/ProtectedRoute.tsx'
 import LoginPage from './pages/LoginPage.tsx'
+import EmployeeDashboard from './pages/EmployeeDashboard.tsx'
 
 export default function App() {
   return (
@@ -11,7 +12,7 @@ export default function App() {
         {/* Employee routes */}
         <Route
           path="/employee/dashboard"
-          element={<ProtectedRoute requiredRole="employee"><div>Employee Dashboard</div></ProtectedRoute>}
+          element={<ProtectedRoute requiredRole="employee"><EmployeeDashboard /></ProtectedRoute>}
         />
         <Route
           path="/employee/apply"
