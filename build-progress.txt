@@ -1,21 +1,53 @@
 # Build Progress - Employee Leave Management System
 
 ## Phase 1: Backend API (leave-api)
+✓ COMPLETED
+- Subtask 1-1: Initialize leave-api project ✓
+- Subtask 1-2: Build Express app scaffold ✓
+- Subtask 1-3: Build JWT auth middleware ✓
+- Subtask 1-4: Build leave routes ✓
+- Subtask 1-5: Write backend unit tests ✓
 
-### Subtask 1-1: Initialize leave-api project ✓ COMPLETED
-- Created leave-api/package.json (CommonJS for backend, jest config)
-- Created leave-api/tsconfig.json (target: ES2020, module: commonjs)
-- Created leave-api/.env (JWT_SECRET and PORT)
-- Created leave-api/.gitignore
-- All dependencies installed successfully
-- npm install verified: INSTALL_OK
+## Phase 2: Frontend SPA (leave-app)
+- Subtask 2-1: Initialize leave-app project ✓
+- Subtask 2-2: Build API client & Login page ✓
+- Subtask 2-3: Build Employee Dashboard ✓
+- Subtask 2-4: Build Apply Leave page ✓ COMPLETED (2024-07-14)
 
-### Remaining Subtasks (pending):
-- 1-2: Build Express app scaffold
-- 1-3: Build JWT auth middleware
-- 1-4: Build leave routes
-- 1-5: Write backend unit tests
+### Subtask 2-4 Details:
+- Created leave-app/src/pages/ApplyLeavePage.tsx
+- Implemented form with all required fields:
+  * Leave Type dropdown (id='leaveType')
+  * Start Date input (id='startDate')
+  * End Date input (id='endDate')
+  * Reason textarea (id='reason')
+  * Submit button (id='submitLeave')
+- Client-side validation:
+  * End date >= start date (shows id='dateError')
+  * Reason required (shows id='reasonError')
+  * All fields required
+- Success/error toast handling (id='toast-container')
+- API integration with POST /leave/apply
+- Form reset and redirect on success
+- Updated App.tsx to route to ApplyLeavePage
+
+### Remaining Frontend Subtasks (pending):
+- 2-5: Build Leave History page
+- 2-6: Build Manager Dashboard
+
+## Phase 3: Test Infrastructure
+- Subtask 3-1: Create testdata/leavedata.json (pending)
+- Subtask 3-2: Update playwright.config.ts (pending)
+
+## Phase 4: Page Object Model Classes
+- Subtask 4-1 to 4-5: Page objects (pending)
+
+## Phase 5: E2E Test Specs
+- Subtask 5-1 to 5-4: Test specs (pending)
+
+## Phase 6: Integration & Verification
+- Subtask 6-1 to 6-2: Full suite verification (pending)
 
 ## Current Status
-- Phase 1, Subtask 1-1: COMPLETED
-- Next: Phase 1, Subtask 1-2 (Build Express app scaffold)
+- Completed: Phases 1, and subtask 2-4 of Phase 2
+- Next: Subtask 2-5 (Build Leave History page)
