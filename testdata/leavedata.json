@@ -1,0 +1,62 @@
+{
+  "baseURL": "http://localhost:3000",
+  "employee": {
+    "email": "employee@test.com",
+    "password": "Employee@1234",
+    "role": "employee"
+  },
+  "manager": {
+    "email": "manager@test.com",
+    "password": "Manager@1234",
+    "role": "manager"
+  },
+  "leaveTypes": [
+    "Annual",
+    "Sick",
+    "Casual"
+  ],
+  "leaveBalance": {
+    "Annual": 15,
+    "Sick": 10,
+    "Casual": 5
+  },
+  "leaveRequests": [
+    {
+      "leaveType": "Annual",
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-24",
+      "reason": "Summer vacation"
+    },
+    {
+      "leaveType": "Sick",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-16",
+      "reason": "Medical appointment"
+    },
+    {
+      "leaveType": "Casual",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-01",
+      "reason": "Personal work"
+    },
+    {
+      "leaveType": "Annual",
+      "startDate": "2026-08-10",
+      "endDate": "2026-08-15",
+      "reason": "Extended weekend trip"
+    },
+    {
+      "leaveType": "Sick",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-26",
+      "reason": "Flu"
+    }
+  ],
+  "messages": {
+    "loginSuccess": "Login successful",
+    "leaveApplied": "Leave request submitted successfully",
+    "leaveApproved": "Leave request approved",
+    "leaveRejected": "Leave request rejected",
+    "leaveCancelled": "Leave request cancelled"
+  }
+}
