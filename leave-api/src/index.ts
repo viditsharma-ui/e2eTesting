@@ -2,6 +2,7 @@ import express, { Express, Request, Response } from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import authRoutes from './routes/auth'
+import leaveRoutes from './routes/leave'
 
 // Load environment variables
 dotenv.config()
@@ -31,7 +32,7 @@ app.get('/', (req: Request, res: Response) => {
 
 // Routes
 app.use('/auth', authRoutes)
-// TODO: Add leave routes
+app.use('/leave', leaveRoutes)
 
 // Start server
 app.listen(PORT, () => {
