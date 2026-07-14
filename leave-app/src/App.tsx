@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import ProtectedRoute from './components/ProtectedRoute.tsx'
 import LoginPage from './pages/LoginPage.tsx'
 import EmployeeDashboard from './pages/EmployeeDashboard.tsx'
+import ApplyLeavePage from './pages/ApplyLeavePage.tsx'
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
         />
         <Route
           path="/employee/apply"
-          element={<ProtectedRoute requiredRole="employee"><div>Apply Leave</div></ProtectedRoute>}
+          element={<ProtectedRoute requiredRole="employee"><ApplyLeavePage /></ProtectedRoute>}
         />
         <Route
           path="/employee/history"
