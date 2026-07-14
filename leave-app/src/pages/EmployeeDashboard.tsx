@@ -41,7 +41,6 @@ export default function EmployeeDashboard() {
         setRecentRequests(allRequests.slice(0, 5))
       } catch (err) {
         setError('Failed to load dashboard data')
-        console.error('Dashboard error:', err)
       } finally {
         setLoading(false)
       }
