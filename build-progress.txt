@@ -1,0 +1,21 @@
+# Build Progress - Employee Leave Management System
+
+## Phase 1: Backend API (leave-api)
+
+### Subtask 1-1: Initialize leave-api project ✓ COMPLETED
+- Created leave-api/package.json (CommonJS for backend, jest config)
+- Created leave-api/tsconfig.json (target: ES2020, module: commonjs)
+- Created leave-api/.env (JWT_SECRET and PORT)
+- Created leave-api/.gitignore
+- All dependencies installed successfully
+- npm install verified: INSTALL_OK
+
+### Remaining Subtasks (pending):
+- 1-2: Build Express app scaffold
+- 1-3: Build JWT auth middleware
+- 1-4: Build leave routes
+- 1-5: Write backend unit tests
+
+## Current Status
+- Phase 1, Subtask 1-1: COMPLETED
+- Next: Phase 1, Subtask 1-2 (Build Express app scaffold)
