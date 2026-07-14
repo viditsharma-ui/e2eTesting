@@ -40,7 +40,30 @@
 - Subtask 3-2: Update playwright.config.ts (pending)
 
 ## Phase 4: Page Object Model Classes
-- Subtask 4-1 to 4-5: Page objects (pending)
+- Subtask 4-1: LeaveLoginPage ✓ COMPLETED
+- Subtask 4-2: EmployeeDashboardPage ✓ COMPLETED
+- Subtask 4-3: ApplyLeavePage ✓ COMPLETED (2024-07-14)
+
+### Subtask 4-3 Details (ApplyLeavePage):
+- Created pages/ApplyLeavePage.ts following Login/Login.ts pattern
+- Locators defined for all form elements:
+  * leaveType dropdown (page.locator('#leaveType'))
+  * startDate input (page.locator('#startDate'))
+  * endDate input (page.locator('#endDate'))
+  * reason textarea (page.locator('#reason'))
+  * submitLeave button (page.locator('#submitLeave'))
+  * dateError message (page.locator('#dateError'))
+  * reasonError message (page.locator('#reasonError'))
+  * toast notification (page.locator('#toast-container'))
+- Implemented async methods:
+  * goto() - navigates to /employee/apply
+  * fillAndSubmit(leaveType, startDate, endDate, reason) - fills and submits form
+  * getValidationErrors() - returns object with dateError and reasonError text
+- TypeScript compilation verified: 0 errors
+
+### Remaining Page Object Classes (pending):
+- 4-4: LeaveHistoryPage
+- 4-5: ManagerDashboardPage
 
 ## Phase 5: E2E Test Specs
 - Subtask 5-1 to 5-4: Test specs (pending)
@@ -49,5 +72,5 @@
 - Subtask 6-1 to 6-2: Full suite verification (pending)
 
 ## Current Status
-- Completed: Phases 1, and subtask 2-4 of Phase 2
-- Next: Subtask 2-5 (Build Leave History page)
+- Completed: Phases 1, subtask 2-4 of Phase 2, subtasks 4-1, 4-2, 4-3 of Phase 4
+- Next: Subtask 4-4 (LeaveHistoryPage) or continuing with Phase 2 frontend completion
