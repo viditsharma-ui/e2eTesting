@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import client from '../api/client'
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
@@ -22,20 +23,9 @@ export default function LoginPage() {
     }
 
     try {
-      const response = await fetch('http://localhost:3001/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      })
+      const response = await client.post('/auth/login', { email, password })
+      const data = response.data
 
-      if (!response.ok) {
-        setError('Invalid email or password')
-        return
-      }
-
-      const data = await response.json()
       localStorage.setItem('token', data.token)
       localStorage.setItem('role', data.user.role)
       localStorage.setItem('userId', data.user.id)
@@ -48,7 +38,7 @@ export default function LoginPage() {
         navigate('/manager/dashboard')
       }
     } catch (err) {
-      setError('An error occurred. Please try again.')
+      setError('Invalid email or password')
     }
   }
 
