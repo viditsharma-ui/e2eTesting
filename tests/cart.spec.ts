@@ -26,5 +26,7 @@ test.beforeEach(async({page})=>{
 })
 
 test("view cart",async({})=>{
-
+    await dashboardPage.cartButton.click()
+    await expect(cart.productName).toBeVisible()
+    await expect(cart.productName).toContainText(productName, {ignoreCase: true})
 })
