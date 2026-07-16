@@ -1,4 +1,4 @@
-import{ test,Locator} from "@playwright/test"
+import{ test, Locator, Page} from "@playwright/test"
 
 export class Cart{
 
